@@ -1,0 +1,13 @@
+compile:
+  override:
+    - make build
+
+test:
+  override:
+    - make test
+
+machine:
+  environment:
+    AWS_REGION: ap-northeast-1
+  node:
+    version: 7.10.0

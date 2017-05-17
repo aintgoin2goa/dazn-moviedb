@@ -1,0 +1,42 @@
+{
+  "name": "dazn-moviedb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": "7.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aintgoin2goa/dazn-moviedb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aintgoin2goa/dazn-moviedb/issues"
+  },
+  "homepage": "https://github.com/aintgoin2goa/dazn-moviedb#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "mocha": "^3.4.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "sinon": "^2.2.0",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
+}
