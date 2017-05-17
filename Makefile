@@ -12,11 +12,17 @@ export PATH := ./node_modules/.bin:$(PATH)
 install:
 	npm install
 
+lint:
+	eslint server/
+
 build:
 	webpack
 
 test:
-	mocha
+	mocha test/**/*.test.js
+
+int-test:
+	mocha test/**/*.int-test.js
 
 run:
 	node app.js

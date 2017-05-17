@@ -26,6 +26,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "css-loader": "^0.28.1",
+    "eslint": "^3.19.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "mocha": "^3.4.1",
     "node-sass": "^4.5.3",
@@ -37,6 +38,8 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "node-fetch": "^1.6.3",
+    "ramda": "^0.23.0"
   }
 }
