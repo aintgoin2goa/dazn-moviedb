@@ -14,7 +14,7 @@ function buildFetcher (endpoint, query){
 	return () =>fetch(`${url}?${querystring}`).then(handleResponse.bind(null, url));
 }
 
-function handleResponse (response, url){
+function handleResponse (url, response){
 	if(!response.ok){
 		throw new Error(`Received a ${response.status} ${response.statusText} from ${url}`);
 	}else{

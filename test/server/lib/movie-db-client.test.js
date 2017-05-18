@@ -7,7 +7,7 @@ describe('Movie DB Client', () => {
 	let client;
 
 	const fixtures = {
-		results: require('../fixtures/movies.json')
+		results: require('../../fixtures/movies.json')
 	};
 
 	const fetchFactoryStub = {
@@ -15,7 +15,7 @@ describe('Movie DB Client', () => {
 	};
 
 	before(() => {
-		client = require('../../server/lib/movie-db-client');
+		client = require('../../../server/lib/movie-db-client');
 	});
 
 	it('Should be able to search the DB for movies matching a search term', () => {

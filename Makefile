@@ -19,10 +19,10 @@ build:
 	webpack
 
 test:
-	mocha test/**/*.test.js
+	mocha test/server/ --recursive
 
 int-test:
 	mocha test/**/*.int-test.js
 
 run:
-	node app.js
+	node server/app.js

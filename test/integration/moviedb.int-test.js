@@ -6,7 +6,7 @@ describe('Movie DB client', () => {
 	let factory;
 
 	before(() => {
-		factory = require('../../server/lib/moviedb-fetch-factory')
+		factory = require('../../../server/lib/moviedb-fetch-factory')
 	});
 
 
