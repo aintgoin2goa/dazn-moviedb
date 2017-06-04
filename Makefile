@@ -14,15 +14,21 @@ install:
 
 lint:
 	eslint server/
+	eslint client/
 
 build:
 	webpack
 
-test:
+test: lint build test-server test-client
+
+test-server:
 	mocha test/server/ --recursive
 
 int-test:
 	mocha test/**/*.int-test.js
+
+test-client:
+	karma start
 
 run:
 	node server/app.js

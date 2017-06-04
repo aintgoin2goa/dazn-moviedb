@@ -1,6 +1,6 @@
 'use strict';
 
-function index (req, res, next){
+function index (req, res){
 	res.render('home');
 }
 
