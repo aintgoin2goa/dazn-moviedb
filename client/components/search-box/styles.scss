@@ -1,0 +1,27 @@
+@import '../../lib/scss/mixins';
+
+.search-box {
+	width: 100%;
+	display: flex;
+
+	.search-box__label {
+		@include visuallyHidden;
+	}
+
+	.search-box__input {
+		font-family: sans-serif;
+		font-size: 30px;
+		padding: 2px 5px;
+		border: 1px solid rgba(0,0,0,0.7);
+		border-radius: 3px;
+		flex-grow:1;
+	}
+
+	.search-box__button {
+		border: 0;
+		background: #CCCCCC;
+		box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.7);
+		border-radius: 3px;
+		font-size: 30px;
+	}
+}

@@ -10,7 +10,7 @@
     "node": "7.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -46,7 +46,10 @@
     "express": "^4.15.2",
     "express-handlebars": "^3.0.0",
     "node-fetch": "^1.6.3",
+    "preact": "^8.1.0",
     "ramda": "^0.23.0",
-    "supertest": "^3.0.0"
+    "redux": "^3.6.0",
+    "supertest": "^3.0.0",
+    "whatwg-fetch": "^2.0.3"
   }
 }

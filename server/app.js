@@ -10,6 +10,8 @@ const controllers = {
 	movies: require('./controllers/movie-controller')
 };
 
+app.use(express.static('public'));
+
 app.engine('handlebars', exhbs({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
 
