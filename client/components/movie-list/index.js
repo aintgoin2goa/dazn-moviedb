@@ -6,9 +6,9 @@ import {h} from 'preact';
 
 export default function MovieList(props){
 	return (
-		<div className="movie-list">
-			{props.movies.map(movie => movie.name)}
-		</div>
+		<ul className="movie-list">
+			{props.movies.map(movie => <li key={movie.name}>{movie.name}</li>)}
+		</ul>
 	)
 }
 
