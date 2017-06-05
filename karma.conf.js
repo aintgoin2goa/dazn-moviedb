@@ -1,3 +1,6 @@
+const webpackConfig = require('./webpack.config.js');
+webpackConfig.entry = '';
+
 module.exports = function(config) {
   config.set({
 
@@ -12,7 +15,6 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'public/*.js',
       'test/client/**/*.test.js'
     ],
 
@@ -25,6 +27,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+    	'test/client/**/*.test.js': ['webpack']
     },
 
 
@@ -62,6 +65,10 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+	webpack: webpackConfig,
+  	webpackMiddleware: {
+		noInfo: true
+ 	}
   })
 }

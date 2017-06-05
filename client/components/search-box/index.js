@@ -17,7 +17,6 @@ function onSearchClick(){
 }
 
 const searchBox = props => {
-	console.log('searchBox', props);
 	return (
 		<div className="search-box">
 			<label htmlFor="search-box-input" className="search-box__label">Search</label>
