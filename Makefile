@@ -19,6 +19,9 @@ lint:
 build:
 	webpack
 
+clean:
+	rm -rf public/
+
 test: lint build test-server test-client
 
 test-server:

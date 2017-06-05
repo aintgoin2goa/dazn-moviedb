@@ -14,14 +14,14 @@ describe('MovieList', () => {
 		};
 
 		const result = MovieList(props);
-		expect(result.attributes.className).to.equal('movie-list');
-		expect(result.nodeName).to.equal('ul');
-		expect(result.children).to.have.length(props.movies.length);
+		expect(result.nodeName).to.equal('div');
+		expect(result.attributes.className).to.equal('movie-list__container');
+		expect(result.children[0].nodeName).to.equal('ul');
+		expect(result.children[0].children).to.have.length(props.movies.length);
 		for(let i=0, l=props.movies.length; i<l; i++){
-			console.log(result.children[i]);
-			expect(result.children[i].nodeName).to.equal('li');
-			expect(result.children[i].children[0]).to.equal(props.movies[i].name);
-			expect(result.children[i].key).to.equal(props.movies[i].name);
+			expect(result.children[0].children[i].nodeName).to.equal('li');
+			expect(result.children[0].children[i].children[0]).to.equal(props.movies[i].name);
+			expect(result.children[0].children[i].key).to.equal(props.movies[i].name);
 		}
 	})
 });

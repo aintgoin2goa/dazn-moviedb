@@ -10,10 +10,11 @@ import MovieList from './components/movie-list';
 const container = document.getElementById('container');
 
 const App = (props) => {
+	console.log('RENDER', props);
 	return (
 		<div>
-			{SearchBox(props)}
-			{MovieList(props)}
+			<SearchBox {...props}/>
+			<MovieList {...props}/>
 		</div>
 	)
 };
