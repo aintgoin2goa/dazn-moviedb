@@ -16,7 +16,6 @@ export function searchMovies(term, store, actions){
 	return fetch(`/api/search?q=${encodeURIComponent(term)}`)
 		.then(handleResponse.bind(null, store, actions.requestError, actions.requestComplete))
 		.then(movies => {
-			console.log('movies', movies);
 			store.dispatch(actions.moviesLoaded(movies));
 			store.dispatch(actions.requestComplete());
 		})
