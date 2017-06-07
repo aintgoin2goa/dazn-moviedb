@@ -16,7 +16,7 @@
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-color: #CCCCCC;
-	margin: 10px auto;
+	margin: 10px auto; /* auto margins on flex items make the browser sort out their spacing for you, similar ot space-between */
 	position: relative;
 }
 

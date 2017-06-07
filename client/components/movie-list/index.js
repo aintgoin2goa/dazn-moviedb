@@ -1,5 +1,7 @@
 /** @jsx h */
 
+// this component displays the movies returned from the server
+
 import './styles.scss';
 import {h} from 'preact';
 
